@@ -1,8 +1,11 @@
 # FILE NAME - phishing_email_detector.py
 
-# NAME: 
-# DATE: 
-# BRIEF DESCRIPTION:  
+# NAME: ANTONIO SANTIAGO    
+# DATE: 10/2/2025
+# BRIEF DESCRIPTION: Program that analyzes an email subject line to detect phishing attempts based on common red flags.
+
+
+
 
 
 
@@ -15,9 +18,27 @@
 
 ########## ENTER YER CODE BELOW THIS LINE ##########
 
+def main():
+    phishing_email_detector()
 
+def phishing_email_detector():
+    subject_line = input("Enter the email subject line: ")
 
+    print("\nSECURITY ASSESSMENT: ")
 
+    if "urgent" in subject_line.lower() or "immediate action required" in subject_line.lower():
+        print("HIGH RISK: Possible phishing attempt.")
+    elif "win" in subject_line.lower() or "free" in subject_line.lower():
+        print("MEDIUM RISK: Suspicious offer detected.")
+    elif "password reset" in subject_line.lower():
+        print("LOW RISK: Verify legitimacy with sender.")
+    else:
+        print("No phishing indicators detected.")
+
+    print("------------------------")
+    print(f"Analyzed subject: \'{subject_line}\'")
+
+main()
 
 
 
@@ -26,8 +47,15 @@
 
 ########### END YER CODE ABOVE THIS LINE ###########
 
-    
+#    Prompt the user to enter an email subject line (as a string).
 
+# If the subject contains "urgent" or "immediate action required" output "HIGH RISK: Possible phishing attempt."
+
+# Else if the subject contains "win" or "free" output "MEDIUM RISK: Suspicious offer detected."
+
+#Else if the subject contains "password reset" output "LOW RISK: Verify legitimacy with sender."
+
+# Else output "No phishing indicators detected."
 
 
 ########################################
@@ -77,7 +105,9 @@ Analyzed subject: "Did you request a password reset?"
 '''
 
 1. Was using `in` difficult or was it natural?
-
+In was simple and straightforward when using in this lab.
+I understood everything else so adding "in" was a simple 1 step process.
+I had more trouble using "in" when having to options i wanted to decide from. I thought "or" would work.
 
 
 
@@ -97,7 +127,7 @@ Analyzed subject: "Did you request a password reset?"
 Please gauge your utilization of AI on the following spectrum. Place an "X" in front
 of the appropriate response. Only choose one of the following:
 
-[ ] I did not use AI at all for this lab.
+[X] I did not use AI at all for this lab.
 [ ] I wrote the initial draft of the software but had AI help me make it better.
 [ ] I fed the lab description to AI and had it generate a response but I modified it.
 [ ] AI created the entire program for me.
@@ -112,6 +142,6 @@ may impede your understanding. Please rate how well you understand the concepts 
 [ ] I understand very little about this lab.
 [ ] I am about 50/50 on this lab; I get parts of it but not the whole picture.
 [ ] I pretty much get it.
-[ ] I'm solid. Totally got it.
+[X] I'm solid. Totally got it.
 
 '''
