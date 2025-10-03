@@ -2,7 +2,7 @@
 
 # NAME: ANTONIO SANTIAGO    
 # DATE: 10/2/2025
-# BRIEF DESCRIPTION:  program that analyzes an email subject line to detect phishing attempts based on common red flags:
+# BRIEF DESCRIPTION:  program that analyzes an email subject line to detect phishing attempts based on common red flags
 
 
 
@@ -23,8 +23,7 @@ def main():
 
 def phishing_email_detector():
     subject = input("Enter the email subject line: ")
-
-    print("\nSECURITY ASSESSMENT: ")
+    print("\nSECURITY ASSESSMENT:")
 
     if "urgent" in subject.lower() or "immediate action required" in subject.lower():
         print("HIGH RISK: Possible phishing attempt.")
@@ -37,6 +36,7 @@ def phishing_email_detector():
 
     print("------------------------")
     print(f'Analyzed subject: "{subject}"')
+
 main()
 
 
