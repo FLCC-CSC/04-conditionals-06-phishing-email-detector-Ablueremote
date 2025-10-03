@@ -2,7 +2,7 @@
 
 # NAME: ANTONIO SANTIAGO    
 # DATE: 10/2/2025
-# BRIEF DESCRIPTION: Program that analyzes an email subject line to detect phishing attempts based on common red flags.
+# BRIEF DESCRIPTION:  program that analyzes an email subject line to detect phishing attempts based on common red flags:
 
 
 
@@ -36,8 +36,7 @@ def phishing_email_detector():
         print("No phishing indicators detected.")
 
     print("------------------------")
-    print(f"Analyzed subject: \'{subject_line}\'")
-
+    print(f'Analyzed subject: \"{subject_line}\"')
 main()
 
 
